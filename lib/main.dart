@@ -31,8 +31,15 @@ class MainScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Container(
+              padding: EdgeInsets.only(bottom: 50),
+              child: Text("Simple RPG2", style: TextStyle(fontSize: 50),),
+            ),
             ElevatedButton(
-              child: const Text("Dungeon"),
+              child: const SizedBox(
+                width: 100,
+                child: Center(child: Text("Dungeon")),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -41,7 +48,10 @@ class MainScreen extends StatelessWidget {
               },
             ),
             ElevatedButton(
-              child: const Text("Blacksmith"),
+              child: const SizedBox(
+                width: 100,
+                child: Center(child:Text("BlackSmith")),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -50,7 +60,10 @@ class MainScreen extends StatelessWidget {
               },
             ),
             ElevatedButton(
-              child: const Text("Store"),
+              child: const SizedBox(
+                width: 100,
+                child: Center(child:Text("Store")),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -59,7 +72,10 @@ class MainScreen extends StatelessWidget {
               },
             ),
             ElevatedButton(
-              child: const Text("Inventory"),
+              child: const SizedBox(
+                width: 100,
+                child: Center(child:Text("Inventory")),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -68,7 +84,10 @@ class MainScreen extends StatelessWidget {
               },
             ),
             ElevatedButton(
-              child: const Text("Status"),
+              child: const SizedBox(
+                width: 100,
+                child: Center(child:Text("Status")),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
